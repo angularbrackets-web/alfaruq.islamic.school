@@ -8,7 +8,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden pt-48 md:pt-2">
+    <section id="home" className="min-h-screen relative overflow-hidden pt-72 md:pt-2">
       {/* Dynamic Gradient Background - Darker */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-black">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40"></div>
@@ -116,7 +116,7 @@ const HeroSection = () => {
                     href="https://docs.google.com/forms/d/e/1FAIpQLScBGnya-MWf-d39tWtyDQNgEP_2Ft_86aslmSndZAY2BfRqwg/viewform?pli=1"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="relative inline-flex items-center px-12 py-6 bg-gradient-to-r from-blue-500 to-purple-500 text-white font-semibold rounded-full overflow-hidden transition-all duration-500 hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/25 hover:-translate-y-1 active:scale-95"
+                    className="relative inline-flex items-center px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white text-base sm:text-lg font-semibold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/25 hover:-translate-y-1 active:scale-95"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-purple-400 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -131,7 +131,7 @@ const HeroSection = () => {
                   <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-blue-300/20 rounded-full blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500"></div>
                   <a
                     href="#about"
-                    className="relative inline-flex items-center px-12 py-6 bg-white/5 backdrop-blur-xl text-white font-semibold rounded-full border-2 border-white/20 overflow-hidden transition-all duration-500 hover:scale-110 hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 active:scale-95"
+                    className="relative inline-flex items-center px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto justify-center bg-white/5 backdrop-blur-xl text-white text-base sm:text-lg font-semibold rounded-full border-2 border-white/20 overflow-hidden transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:bg-white/10 hover:border-white/30 hover:-translate-y-1 active:scale-95"
                   >
                     <div className="absolute inset-0 bg-gradient-to-r from-white/5 to-blue-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                     <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/10 to-transparent transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
