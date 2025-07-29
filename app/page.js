@@ -4,7 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Navbar from "./Navbar";
 import PostsGrid from "./PostsGrid";
-import posts from "./postsData";
+import { getPosts } from "@/lib/getPosts";
+import HeroSection from "@/components/HeroSection";
 
 // Post heading style for both posts page and homepage
 const postHeadingClass = "text-xl font-bold text-gray-900 drop-shadow-sm";
@@ -12,6 +13,23 @@ const postHeadingClass = "text-xl font-bold text-gray-900 drop-shadow-sm";
 const sectionHeadingClass = "text-5xl font-extrabold text-gray-900 drop-shadow-md";
 
 export default function Home() {
+  const [homepagePosts, setHomepagePosts] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
+
+  React.useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const posts = await getPosts(5); // Limit to 5 posts for homepage
+        setHomepagePosts(posts);
+      } catch (err) {
+        console.error("Failed to fetch posts:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchPosts();
+  }, []);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
     const observerOptions = {
@@ -31,57 +49,12 @@ export default function Home() {
     return () => observer.disconnect();
   }, []);
 
-  // Sort: pinned first, then by date desc
-  const sortedPosts = [...posts].sort((a, b) => {
-    if (a.pin && !b.pin) return -1;
-    if (!a.pin && b.pin) return 1;
-    return new Date(b.date) - new Date(a.date);
-  });
-  const homepagePosts = sortedPosts.slice(0, 5);
-
   return (
     <>
       <Navbar />
       {/* Hero Section */}
-      <section id="home" className="min-h-screen gradient-bg islamic-pattern relative overflow-hidden pt-36">
-        <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-          <div className="text-center">
-            <div className="floating mb-8">
-              <div className="w-32 h-32 mx-auto bg-white bg-opacity-20 rounded-full flex items-center justify-center backdrop-blur-lg">
-                <span className="text-6xl text-white arabic-font">الف</span>
-              </div>
-            </div>
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 fade-in">Empowering the Future</h1>
-            <p className="text-2xl md:text-3xl text-blue-100 mb-8 fade-in arabic-font">with Faith and Knowledge</p>
-            <p className="text-xl text-white mb-12 max-w-3xl mx-auto fade-in">
-              Accredited Islamic Education from Kindergarten to Grade 9<br />
-              Building strong foundations in faith, character, and academic excellence
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center fade-in">
-              <a
-                href="https://docs.google.com/forms/d/e/1FAIpQLScBGnya-MWf-d39tWtyDQNgEP_2Ft_86aslmSndZAY2BfRqwg/viewform?pli=1"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center px-8 py-4 bg-white text-blue-900 font-semibold rounded-full hover:bg-blue-50 transition-all hover-lift pulse-glow"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                </svg>
-                Register Now
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center px-8 py-4 glass-effect text-white font-semibold rounded-full hover:bg-white hover:bg-opacity-20 transition-all hover-lift"
-              >
-                <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                Learn More
-              </a>
-            </div>
-          </div>
-        </div>
+      <section id="home" className="min-h-screen gradient-bg islamic-pattern relative overflow-hidden pt-28 scroll-mt-28">
+        <HeroSection />
       </section>
 
       {/* Posts Section */}
@@ -105,7 +78,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">About Our School</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Al Faruq Islamic School and Amana Academy has been a beacon of hope for families seeking quality education grounded in Islamic values.</p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Al Faruq Islamic School has been a beacon of hope for families seeking quality education grounded in Islamic values.</p>
           </div>
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="bg-white rounded-3xl p-8 hover-lift fade-in shadow-lg">
@@ -371,7 +344,6 @@ export default function Home() {
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Al Faruq Islamic School</h3>
-                  <p className="text-gray-400">& Amana Academy</p>
                 </div>
               </div>
               <p className="text-gray-400 mb-6 max-w-md">Empowering the future with Faith and Knowledge. Building strong foundations in Islamic values and academic excellence.</p>
@@ -415,7 +387,7 @@ export default function Home() {
             </div>
           </div>
           <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
-            <p>&copy; 2025 Al Faruq Islamic School & Amana Academy. All rights reserved.</p>
+            <p>&copy; 2025 Al Faruq Islamic School. All rights reserved.</p>
             <p className="mt-2">Empowering the future with Faith and Knowledge</p>
           </div>
         </div>

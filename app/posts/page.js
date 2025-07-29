@@ -1,17 +1,31 @@
-"use client"
-import React from "react";
-import Image from "next/image";
+"use client";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Navbar from "../Navbar";
 import PostsGrid from "../PostsGrid";
-import posts from "../postsData";
+import { getPosts } from "@/lib/getPosts";
 
-// Post heading style for both posts page and homepage
 const postHeadingClass = "text-xl font-bold text-gray-900 drop-shadow-sm";
-// For section headings
 const sectionHeadingClass = "text-5xl font-extrabold text-gray-900 drop-shadow-md";
 
 export default function PostsPage() {
+	const [posts, setPosts] = useState([]);
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		const fetchPosts = async () => {
+			try {
+				const postList = await getPosts();
+				setPosts(postList);
+			} catch (err) {
+				console.error("Failed to fetch posts:", err);
+			} finally {
+				setLoading(false);
+			}
+		};
+		fetchPosts();
+	}, []);
+
 	function formatDate(dateStr) {
 		const date = new Date(dateStr);
 		return date.toLocaleDateString(undefined, {
@@ -21,17 +35,9 @@ export default function PostsPage() {
 		});
 	}
 
-	// Sort: pinned first, then by date desc
-	const sortedPosts = [...posts].sort((a, b) => {
-		if (a.pin && !b.pin) return -1;
-		if (!a.pin && b.pin) return 1;
-		return new Date(b.date) - new Date(a.date);
-	});
-
 	return (
 		<>
 			<Navbar />
-			{/* Main content */}
 			<div className="min-h-screen bg-gray-50 py-20 pt-36">
 				<div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 					<div className="mb-12 text-center">
@@ -46,7 +52,11 @@ export default function PostsPage() {
 							Back to Home
 						</Link>
 					</div>
-					<PostsGrid posts={sortedPosts} />
+					{loading ? (
+						<p className="text-center">Loading posts...</p>
+					) : (
+						<PostsGrid posts={posts} />
+					)}
 				</div>
 			</div>
 		</>

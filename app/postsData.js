@@ -6,7 +6,7 @@ const posts = [
     title: "School Introduction Video",
     text: [
       "🎓✨ Looking for a great Islamic school for your child?",
-      "Come check out Al-Faruq Islamic School & Amana Academy – where learning meets faith in a warm, family-like environment!",
+      "Come check out Al-Faruq Islamic School – where learning meets faith in a warm, family-like environment!",
       "📚 What we offer:",
       "🌙 Rigorous Islamic and Quran education",
       "📘 Strong academics (Math, Science, English & more)",
@@ -19,7 +19,7 @@ const posts = [
       "📞 Call/Text us: 780-243-8811",
       "🌐 Learn more or register online: www.alfaruislamicschool.com",
       "🔑 Limited spots – don’t wait too long!",
-      "Al-Faruq Islamic School & Amana Academy",
+      "Al-Faruq Islamic School",
       "📖 Raising smart, confident Muslim kids – one class at a time 💫"
     ],
     date: "2025-05-15",

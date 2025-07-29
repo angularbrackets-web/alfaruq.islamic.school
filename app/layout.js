@@ -2,7 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 
 export const metadata = {
-  title: "Al Faruq Islamic School & Amana Academy - Empowering the Future with Faith and Knowledge",
+  title: "Al Faruq Islamic School - Empowering the Future with Faith and Knowledge",
   description: "Accredited Islamic Education from Kindergarten to Grade 9. Building strong foundations in faith, character, and academic excellence.",
 };
 
