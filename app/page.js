@@ -302,7 +302,7 @@ export default function Home() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold mb-2">Email Us</h4>
-                    <p className="text-gray-300">info@alfaruqschool.ca</p>
+                    <p className="text-gray-300">info@alfaruqcentre.com</p>
                   </div>
                 </div>
               </div>
