@@ -1,5 +1,38 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Key Features
+
+### Admin Post Management
+
+The project includes a comprehensive admin dashboard for managing posts.
+
+*   **Add Posts:** A dedicated form at `/admin/new` allows administrators to create new posts with a title, date, text content, and an uploaded image or video. Posts can also be pinned.
+*   **Edit Posts:** Existing posts can be modified through an edit page, allowing updates to all fields.
+*   **Delete Posts:** From the main admin dashboard, administrators can remove posts.
+*   **View Posts:** The `/admin` page lists all current posts for easy management.
+
+### Teacher Management
+
+The project also includes a section for managing and displaying teacher information.
+
+*   **Add Teachers:** A dedicated form at `/admin/teachers/new` allows administrators to add new teachers with their name and a poster.
+*   **Delete Teachers:** From the teacher management dashboard at `/admin/teachers`, administrators can remove teachers.
+*   **View Teachers:** The `/teachers` page displays a grid of all teacher posters.
+
+## Technical Architecture
+
+This project uses a modern web architecture composed of the following services:
+
+*   **Frontend:** The user interface is built with [Next.js](httpss://nextjs.org), a React framework for building server-rendered and statically generated web applications.
+
+*   **Database:** Post data is stored in **Firebase Firestore**, a NoSQL cloud database.
+    *   All post information (title, date, text, etc.) is stored in a collection named `posts`.
+    *   Each post is a separate document within this collection.
+
+*   **Media Storage:** Media files (images and videos) are handled by **Cloudinary**.
+    *   Files are uploaded directly from the user's browser to Cloudinary via an upload widget.
+    *   The application does not store the files themselves. Instead, it saves the secure URL provided by Cloudinary into the post's document in Firestore.
+
 ## Getting Started
 
 First, run the development server:

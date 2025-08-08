@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 bg-gradient-to-br from-gray-900 via-slate-900 to-black backdrop-blur-lg shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 flex-shrink-0">
             <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-white shadow-sm overflow-hidden">
               <Image src="/images/AFIS.Logo1.png" alt="Al Faruq Islamic School Logo" width={80} height={80} priority />
             </div>
@@ -25,6 +25,8 @@ export default function Navbar() {
             <Link href="/#locations" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Locations</Link>
             <Link href="/#support" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Support</Link>
             <Link href="/#contact" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Contact</Link>
+            <Link href="/teachers" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Meet the Teachers</Link>
+            <Link href="/school-supplies" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Supplies</Link>
             {/* Social Icons */}
             <div className="flex items-center space-x-4 ml-4 border-l border-white/10 pl-4">
               <a
@@ -79,6 +81,8 @@ export default function Navbar() {
             <Link href="/#locations" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Locations</Link>
             <Link href="/#support" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Support</Link>
             <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Contact</Link>
+            <Link href="/teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Meet the Teachers</Link>
+            <Link href="/school-supplies" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Supplies</Link>
             <a
               href="https://www.gofundme.com/f/al-faruq-islamic-school?attribution_id=sl:b2e4f00b-bc83-4148-835c-d1dbb43b0252&lang=en_CA&ts=1747936408&utm_campaign=fp_sharesheet&utm_content=amp13_c-amp14_c&utm_medium=customer&utm_source=whatsapp&v=amp14_c"
               target="_blank"

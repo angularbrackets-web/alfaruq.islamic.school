@@ -53,12 +53,24 @@ export default function AdminDashboard() {
     <div className="p-8 max-w-4xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">📋 Admin Dashboard</h1>
 
-      <div className="mb-6">
+      <div className="mb-6 flex space-x-4">
         <Link
           href="/admin/new"
           className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
         >
           ➕ Add New Post
+        </Link>
+        <Link
+          href="/admin/teachers/new"
+          className="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+        >
+          ➕ Add New Teacher
+        </Link>
+        <Link
+          href="/admin/teachers"
+          className="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+        >
+          👩‍🏫 Manage Teachers
         </Link>
       </div>
 
