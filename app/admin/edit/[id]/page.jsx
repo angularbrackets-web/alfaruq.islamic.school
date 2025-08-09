@@ -71,8 +71,8 @@ export default function EditPostPage() {
   const openCloudinary = () => {
     const widget = window.cloudinary.createUploadWidget(
       {
-        cloudName: "dcigqwna1",
-        uploadPreset: "unsigned_upload",
+        cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+        uploadPreset: process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET,
         sources: ["local", "url", "camera"],
         multiple: false,
         resourceType: post?.type || "image",

@@ -10,14 +10,14 @@ export default function Navbar() {
     <nav className="fixed w-full z-50 bg-gradient-to-br from-gray-900 via-slate-900 to-black backdrop-blur-lg shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <div className="flex items-center space-x-4 flex-shrink-0">
+          <Link href="/" className="flex items-center space-x-4 flex-shrink-0">
             <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-white shadow-sm overflow-hidden">
               <Image src="/images/AFIS.Logo1.png" alt="Al Faruq Islamic School Logo" width={80} height={80} priority />
             </div>
             <div className="hidden lg:block">
               <h1 className="text-white font-bold text-lg drop-shadow-xl">Al Faruq Islamic School</h1>
             </div>
-          </div>
+          </Link>
           <div className="hidden md:flex space-x-8 items-center">
             <Link href="/" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Home</Link>
             <Link href="/#about" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">About</Link>

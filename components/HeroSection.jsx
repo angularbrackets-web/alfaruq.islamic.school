@@ -8,7 +8,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section id="home" className="min-h-screen relative overflow-hidden pt-72 md:pt-2">
+    <section id="home" className="min-h-screen relative overflow-hidden pt-navbar">
       {/* Dynamic Gradient Background - Darker */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-slate-900 to-black">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/30 to-black/40"></div>
@@ -54,7 +54,7 @@ const HeroSection = () => {
         <div className="max-w-6xl mx-auto w-full">
           <div className="flex flex-col md:flex-row items-start gap-12 md:gap-8">
             {/* Quranic Verse - 30% width on large screens, full width on mobile */}
-            <div className="w-full md:w-1/3 flex-shrink-0 flex self-center -mt-84 mb-8 md:mb-0">
+            <div className="w-full md:w-1/3 flex-shrink-0 flex self-center mt-0 md:-mt-84 mb-8 md:mb-0">
               <div className={`w-full ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'} transform transition-all duration-1000`}>
                 <div className="relative group">
                   <div className="absolute -inset-6 bg-gradient-to-r from-blue-400/20 via-purple-400/20 to-indigo-400/20 rounded-3xl blur-2xl group-hover:blur-3xl transition-all duration-700"></div>

@@ -33,8 +33,8 @@ export default function NewTeacherPage() {
     }
     const widget = window.cloudinary.createUploadWidget(
       {
-        cloudName: "dcigqwna1",
-        uploadPreset: "unsigned_upload",
+        cloudName: process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
+        uploadPreset: process.env.NEXT_PUBLIC_CLOUDINARY_UPLOAD_PRESET,
         tags: ["teacher-poster"],
         cropping: true,
         multiple: false,

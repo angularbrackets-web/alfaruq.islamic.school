@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -6,7 +7,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
-            <div className="flex items-center space-x-4 mb-6">
+            <Link href="/" className="flex items-center space-x-4 mb-6">
               <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-br from-gray-100 to-white shadow-sm overflow-hidden">
                 <Image src="/images/AFIS.Logo1.png" alt="Al Faruq Islamic School Logo" width={80} height={80} priority />
               </div>
@@ -14,7 +15,7 @@ export default function Footer() {
                 <h3 className="text-xl font-bold">Al Faruq Islamic School</h3>
                 <p className="text-gray-400">Excellence in Education</p>
               </div>
-            </div>
+            </Link>
             <p className="text-gray-400 mb-6 max-w-md">Empowering the future with Faith and Knowledge. Building strong foundations in Islamic values and academic excellence.</p>
             <div className="flex space-x-4">
               <a 
