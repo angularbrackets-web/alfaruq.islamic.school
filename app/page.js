@@ -187,7 +187,13 @@ export default function Home() {
             </div>
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in">
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">Northside Campus</h3>
+                <div className="flex items-center gap-2 mb-2">
+  <h3 className="text-2xl font-bold">Northside Campus</h3>
+  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium">
+    Coming Soon
+  </span>
+</div>
+
                 <p className="text-green-100">Branch Campus</p>
               </div>
               <div className="p-8">
@@ -289,7 +295,13 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Northside Campus</h4>
+                    <div className="flex items-center gap-2 mb-2">
+  <h3 className="text-2xl font-bold">Northside Campus</h3>
+  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium">
+    Coming Soon
+  </span>
+</div>
+
                     <p className="text-gray-300">12903 54 St NW<br />Edmonton, AB T5A 5E5</p>
                   </div>
                 </div>
@@ -310,7 +322,7 @@ export default function Home() {
               <div className="bg-gray-800 rounded-3xl p-8">
                 <h3 className="text-2xl font-bold mb-6">Quick Registration</h3>
                 <p className="text-gray-300 mb-6">Ready to enroll your child? Click below to access our registration form and start your journey with us.</p>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScBGnya-MWf-d39tWtyDQNgEP_2Ft_86aslmSndZAY2BfRqwg/viewform?pli=1" target="_blank" rel="noopener noreferrer" className="inline-flex items-center w-full justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all hover-lift mb-6">
+                <a href="https://classgate.ca/register/alfaruq" target="_blank" rel="noopener noreferrer" className="inline-flex items-center w-full justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full hover:from-blue-700 hover:to-cyan-600 transition-all hover-lift mb-6">
                   <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                   </svg>

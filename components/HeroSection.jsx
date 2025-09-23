@@ -113,7 +113,7 @@ const HeroSection = () => {
                 <div className="group relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-full blur-lg opacity-0 group-hover:opacity-60 transition-all duration-500"></div>
                   <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLScBGnya-MWf-d39tWtyDQNgEP_2Ft_86aslmSndZAY2BfRqwg/viewform?pli=1"
+                    href="https://classgate.ca/register/alfaruq"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative inline-flex items-center px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white text-base sm:text-lg font-semibold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:shadow-2xl hover:shadow-blue-500/25 hover:-translate-y-1 active:scale-95"
