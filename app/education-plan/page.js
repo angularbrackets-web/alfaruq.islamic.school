@@ -293,9 +293,9 @@ export default function EducationPlan() {
       <section className="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-indigo-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16 fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Alberta's Five Assurance Domains</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Alberta&apos;s Five Assurance Domains</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our education plan aligns with Alberta's Assurance Framework, ensuring comprehensive student success
+              Our education plan aligns with Alberta&apos;s Assurance Framework, ensuring comprehensive student success
             </p>
           </div>
 
