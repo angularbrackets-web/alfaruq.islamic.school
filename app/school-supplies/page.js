@@ -28,7 +28,7 @@ export default function SchoolSuppliesPage() {
             <div className="relative">
               <Image
                 src={supply.image}
-                alt={`School supply list for ${supply.title}`}
+                alt={`${supply.title} school supplies list - Al Faruq Islamic School Edmonton Southwest, Alberta accredited K-9 education`}
                 width={800}
                 height={1100}
                 layout="responsive"

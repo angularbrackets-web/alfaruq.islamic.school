@@ -13,7 +13,7 @@ export default async function TeachersPage() {
             <div className="relative h-96">
               <Image
                 src={teacher.posterUrl}
-                alt={`Poster of ${teacher.name}`}
+                alt={`${teacher.name} - Teacher at Al Faruq Islamic School Edmonton, Alberta accredited K-9 education`}
                 layout="fill"
                 objectFit="cover"
               />

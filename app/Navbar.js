@@ -25,6 +25,7 @@ export default function Navbar() {
             <Link href="/#locations" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Locations</Link>
             <Link href="/#support" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Support</Link>
             <Link href="/#contact" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Contact</Link>
+            <Link href="/education-plan" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Education Plan</Link>
             <Link href="/teachers" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Meet the Teachers</Link>
             <Link href="/school-supplies" className="text-white font-bold drop-shadow-xl hover:text-blue-200 transition-colors">Supplies</Link>
             {/* Social Icons */}
@@ -81,6 +82,7 @@ export default function Navbar() {
             <Link href="/#locations" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Locations</Link>
             <Link href="/#support" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Support</Link>
             <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Contact</Link>
+            <Link href="/education-plan" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Education Plan</Link>
             <Link href="/teachers" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Meet the Teachers</Link>
             <Link href="/school-supplies" onClick={() => setIsMobileMenuOpen(false)} className="text-white block px-3 py-2 rounded-md text-base font-medium hover:bg-white/10 transition-colors">Supplies</Link>
             <a

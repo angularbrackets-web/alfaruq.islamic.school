@@ -101,10 +101,10 @@ const HeroSection = () => {
               <div className={`mb-12 transform transition-all duration-1000 delay-700 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
                 <div className="max-w-4xl mx-auto">
                   <p className="text-lg md:text-xl text-white/90 mb-4 leading-relaxed">
-                    Accredited Islamic Education from Kindergarten to Grade 9
+                    Alberta accredited Islamic Education from Kindergarten to Grade 9 in Edmonton Southwest
                   </p>
                   <p className="text-base md:text-lg text-blue-100 leading-relaxed">
-                    Building strong foundations in faith, character, and academic excellence
+                    Located at Al Faruq Masjid, building strong foundations in faith, character, and academic excellence
                   </p>
                 </div>
               </div>
