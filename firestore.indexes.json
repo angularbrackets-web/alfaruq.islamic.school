@@ -13,6 +13,164 @@
           "order": "DESCENDING"
         }
       ]
+    },
+    {
+      "collectionGroup": "pages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "status",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "updated_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_reusable",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "updated_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "pages",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "template",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "updated_at",
+          "order": "DESCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "navigation",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "level",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "navigation",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "parent_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "navigation",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_visible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "navigation",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_featured",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "content_blocks",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "page_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "content_blocks",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "page_id",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "is_visible",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "display_order",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "reusable_components",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "category",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
+    },
+    {
+      "collectionGroup": "reusable_components",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "is_active",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "name",
+          "order": "ASCENDING"
+        }
+      ]
     }
   ],
   "fieldOverrides": []
