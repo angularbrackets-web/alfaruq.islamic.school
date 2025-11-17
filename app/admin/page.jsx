@@ -50,28 +50,63 @@ export default function AdminDashboard() {
   };
 
   return (
-    <div className="p-8 max-w-4xl mx-auto">
+    <div className="p-8 max-w-6xl mx-auto">
       <h1 className="text-3xl font-bold mb-6">📋 Admin Dashboard</h1>
 
-      <div className="mb-6 flex space-x-4">
-        <Link
-          href="/admin/new"
-          className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
-        >
-          ➕ Add New Post
-        </Link>
-        <Link
-          href="/admin/teachers/new"
-          className="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
-        >
-          ➕ Add New Teacher
-        </Link>
-        <Link
-          href="/admin/teachers"
-          className="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
-        >
-          👩‍🏫 Manage Teachers
-        </Link>
+      {/* Enhanced CMS Section */}
+      <div className="mb-8 p-6 bg-blue-50 border border-blue-200 rounded-lg">
+        <h2 className="text-2xl font-bold mb-4 text-blue-900">🎨 Enhanced CMS</h2>
+        <p className="text-sm text-blue-800 mb-4">
+          Comprehensive content management system with navigation, pages, and reusable components
+        </p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <Link
+            href="/admin/cms/navigation"
+            className="p-4 bg-white border-2 border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-lg transition-all"
+          >
+            <div className="text-3xl mb-2">🧭</div>
+            <h3 className="font-bold text-lg mb-1">Navigation Management</h3>
+            <p className="text-sm text-gray-600">
+              Manage multi-level navigation menus with visibility controls
+            </p>
+          </Link>
+
+          <Link
+            href="/admin/cms/pages"
+            className="p-4 bg-white border-2 border-blue-200 rounded-lg hover:border-blue-400 hover:shadow-lg transition-all"
+          >
+            <div className="text-3xl mb-2">📄</div>
+            <h3 className="font-bold text-lg mb-1">Pages & Content Blocks</h3>
+            <p className="text-sm text-gray-600">
+              Create and manage pages with modular content blocks
+            </p>
+          </Link>
+        </div>
+      </div>
+
+      {/* Legacy Posts & Teachers Section */}
+      <div className="mb-8">
+        <h2 className="text-2xl font-bold mb-4">📝 Posts & Teachers</h2>
+        <div className="mb-6 flex flex-wrap gap-4">
+          <Link
+            href="/admin/new"
+            className="inline-block px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
+          >
+            ➕ Add New Post
+          </Link>
+          <Link
+            href="/admin/teachers/new"
+            className="inline-block px-4 py-2 bg-purple-600 text-white rounded hover:bg-purple-700"
+          >
+            ➕ Add New Teacher
+          </Link>
+          <Link
+            href="/admin/teachers"
+            className="inline-block px-4 py-2 bg-gray-600 text-white rounded hover:bg-gray-700"
+          >
+            👩‍🏫 Manage Teachers
+          </Link>
+        </div>
       </div>
 
       {loading ? (
