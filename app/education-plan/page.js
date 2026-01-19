@@ -627,7 +627,7 @@ export default function EducationPlan() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold">Principal Deka Said, M.Ed.</p>
+                    {/* <p className="font-semibold">Principal Deka Said, M.Ed.</p> */}
                     <p className="text-gray-400">info@alfaruqcentre.com</p>
                   </div>
                 </div>

@@ -265,7 +265,7 @@ export default function AnnualReportPage() {
           <p className="text-gray-600 mb-2">
             For more information regarding the 2024-2025 Annual Education Results Report, please contact:
           </p>
-          <p className="text-gray-900 font-semibold">Deka Said - Principal</p>
+          {/* <p className="text-gray-900 font-semibold">Deka Said - Principal</p> */}
           <p className="text-gray-600">Email: info@alfaruqcentre.com | Phone: (780)-243-8811</p>
           <p className="text-gray-500 text-sm mt-4">
             Al Faruq Islamic School South Campus | 4410 127 Street SW, Edmonton, AB T6W 1A2
