@@ -110,15 +110,14 @@ const HeroSection = () => {
               </div>
               {/* Enhanced CTA Buttons with Magnetic Effect */}
               <div className={`flex flex-col sm:flex-row gap-8 justify-center transform transition-all duration-1000 delay-900 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-8 opacity-0'}`}>
-                {/* TODO: Replace this label with the active registration link once the new registration URL is ready */}
-                <div className="relative">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-full blur-lg opacity-30"></div>
-                  <div className="relative inline-flex items-center px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto justify-center bg-gradient-to-r from-blue-500/70 to-purple-500/70 text-white/80 text-base sm:text-lg font-semibold rounded-full overflow-hidden cursor-default select-none">
-                    <svg className="relative w-6 h-6 mr-3 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <div className="group relative">
+                  <div className="absolute -inset-1 bg-gradient-to-r from-blue-500 via-purple-500 to-indigo-500 rounded-full blur-lg opacity-30 group-hover:opacity-60 transition-all duration-500"></div>
+                  <a href="https://www.classgate.ca/register/alfaruq" target="_blank" rel="noopener noreferrer" className="relative inline-flex items-center px-8 sm:px-12 py-4 sm:py-6 w-full sm:w-auto justify-center bg-gradient-to-r from-blue-500 to-purple-500 text-white text-base sm:text-lg font-semibold rounded-full overflow-hidden transition-all duration-500 hover:scale-105 sm:hover:scale-110 hover:-translate-y-1 active:scale-95">
+                    <svg className="relative w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                     </svg>
-                    <span className="relative text-lg font-bold tracking-wide">Registration Opens Soon</span>
-                  </div>
+                    <span className="relative text-lg font-bold tracking-wide">Register Now</span>
+                  </a>
                 </div>
                 <div className="group relative">
                   <div className="absolute -inset-1 bg-gradient-to-r from-white/20 to-blue-300/20 rounded-full blur-lg opacity-0 group-hover:opacity-40 transition-all duration-500"></div>
