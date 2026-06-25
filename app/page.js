@@ -378,7 +378,7 @@ export default function Home() {
               </div>
             </a>
             <a
-              href="/data/Education-Plan-AFIS-Edm.-2024-27.pdf.pdf"
+              href="/data/Education-Plan-AFIS-Edm.-2026-29.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-white rounded-2xl p-6 shadow-lg hover-lift flex items-start space-x-4 group"
@@ -390,7 +390,7 @@ export default function Home() {
               </div>
               <div>
                 <h3 className="text-lg font-bold text-gray-900 group-hover:text-green-600 transition-colors">Education Plan</h3>
-                <p className="text-gray-600 text-sm mt-1">2024-2027 strategic education plan</p>
+                <p className="text-gray-600 text-sm mt-1">2026-2029 strategic education plan</p>
                 <span className="inline-flex items-center text-green-600 text-sm font-medium mt-2">
                   Download PDF
                   <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">

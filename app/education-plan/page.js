@@ -32,13 +32,13 @@ export default function EducationPlan() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center fade-in">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Education Plan</h1>
-            <p className="text-2xl md:text-3xl text-blue-100 mb-4">2024 - 2027</p>
+            <p className="text-2xl md:text-3xl text-blue-100 mb-4">2026 - 2029</p>
             <p className="text-xl text-blue-100 max-w-3xl mx-auto">
               Building excellence in faith-based education through strategic planning and community commitment
             </p>
             <div className="mt-8">
               <a
-                href="/data/Education-Plan-AFIS-Edm.-2024-27.pdf.pdf"
+                href="/data/Education-Plan-AFIS-Edm.-2026-29.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center px-8 py-4 bg-white text-blue-700 font-semibold rounded-full hover:bg-blue-50 transition-all hover-lift"
@@ -339,11 +339,7 @@ export default function EducationPlan() {
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-500">✓</span>
-                          <span>Provincial Achievement Tests (PAT) for Grades 6 & 9</span>
-                        </li>
-                        <li className="flex items-start space-x-2">
-                          <span className="text-blue-500">✓</span>
-                          <span>Student Learning Assessments (SLA)</span>
+                          <span>Provincial Achievement Tests (PAT) for Grade 6</span>
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-blue-500">✓</span>
@@ -606,6 +602,56 @@ export default function EducationPlan() {
         </div>
       </section>
 
+      {/* Success Indicators Section */}
+      <section className="py-20 bg-gradient-to-br from-indigo-50 via-blue-50 to-cyan-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16 fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">Success Indicators by 2029</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              By August 2029, Al Faruq Islamic School aims to achieve these measurable outcomes
+            </p>
+          </div>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">~500 students enrolled</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">Literacy &amp; numeracy proficiency exceeding 85%</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-pink-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">Parent satisfaction above 90%</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">Strong student well-being indicators</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-teal-500 to-teal-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">Recognized Islamic educational program in Edmonton</p>
+            </div>
+            <div className="bg-white rounded-2xl p-6 shadow-lg hover-lift fade-in flex items-start space-x-4">
+              <div className="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-400 rounded-xl flex items-center justify-center flex-shrink-0">
+                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" /></svg>
+              </div>
+              <p className="text-gray-700 font-medium mt-2">Sustainable governance &amp; financial operations</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact & Resources Section */}
       <section className="py-20 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -661,7 +707,7 @@ export default function EducationPlan() {
               <h3 className="text-2xl font-bold mb-6">Additional Resources</h3>
               <div className="space-y-4">
                 <a
-                  href="/data/Education-Plan-AFIS-Edm.-2024-27.pdf.pdf"
+                  href="/data/Education-Plan-AFIS-Edm.-2026-29.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-3 p-4 bg-gray-700 rounded-xl hover:bg-gray-600 transition-colors"
@@ -671,7 +717,7 @@ export default function EducationPlan() {
                   </svg>
                   <div>
                     <p className="font-semibold">Download Education Plan</p>
-                    <p className="text-sm text-gray-400">Full 2024-2027 Plan (PDF)</p>
+                    <p className="text-sm text-gray-400">Full 2026-2029 Plan (PDF)</p>
                   </div>
                 </a>
                 <a
@@ -709,7 +755,7 @@ export default function EducationPlan() {
               <strong>Accountability Statement:</strong> The Education Plan for Al Faruq Islamic School was prepared under the direction of the Board in accordance with its responsibilities under the Private Schools Regulation and the Education Grants Regulation.
             </p>
             <p className="text-gray-400">
-              Board approved: May 30, 2025 | Abdirazak Said, Executive Director, Downtown Islamic Association
+              Board approved: June 24, 2026 | Isse Omar, Executive Director, Downtown Islamic Association
             </p>
           </div>
         </div>
