@@ -6,6 +6,7 @@ import Navbar from "./Navbar";
 import PostsGrid from "./PostsGrid";
 import { getPosts } from "@/lib/getPosts";
 import HeroSection from "@/components/HeroSection";
+import northCampusPhoto from "@/public/images/afis_11005_34th_st.jpeg";
 
 // Post heading style for both posts page and homepage
 const postHeadingClass = "text-xl font-bold text-gray-900 drop-shadow-sm";
@@ -163,12 +164,21 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">Conveniently located to serve families across Edmonton with two campus locations.</p>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in flex flex-col">
+              <div className="relative h-48 md:h-56 w-full bg-gradient-to-br from-blue-500 via-blue-600 to-cyan-500 flex items-center justify-center">
+                <div className="text-center text-white/90">
+                  <svg className="w-12 h-12 mx-auto mb-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                  </svg>
+                  <p className="text-sm font-medium tracking-wide">Southwest Edmonton</p>
+                </div>
+              </div>
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 text-white">
                 <h3 className="text-2xl font-bold mb-2">Southside Campus</h3>
                 <p className="text-blue-100">Main Campus</p>
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-1">
                 <div className="flex items-start space-x-4 mb-6">
                   <div className="w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                     <svg className="w-4 h-4 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -182,21 +192,33 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">Our main campus offering comprehensive programs from Kindergarten to Grade 9 with state-of-the-art facilities.</p>
-                <button className="text-blue-600 font-semibold hover:text-blue-700 transition-colors">Get Directions →</button>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=4410%20127%20St%20SW%2C%20Edmonton%2C%20AB%20T6W%201A7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to the Southside Campus on Google Maps"
+                  className="mt-auto self-start text-blue-600 font-semibold hover:text-blue-700 transition-colors"
+                >
+                  Get Directions →
+                </a>
               </div>
             </div>
-            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in flex flex-col">
+              <div className="relative h-48 md:h-56 w-full bg-gray-100">
+                <Image
+                  src={northCampusPhoto}
+                  alt="Al Faruq Islamic School Northside Campus building at 11005 34 St NW, Edmonton"
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
+                  placeholder="blur"
+                  className="object-cover object-center"
+                />
+              </div>
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <div className="flex items-center gap-2 mb-2">
-  <h3 className="text-2xl font-bold">Northside Campus</h3>
-  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium">
-    Coming Soon
-  </span>
-</div>
-
+                <h3 className="text-2xl font-bold mb-2">Northside Campus</h3>
                 <p className="text-green-100">Branch Campus</p>
               </div>
-              <div className="p-8">
+              <div className="p-8 flex flex-col flex-1">
                 <div className="flex items-start space-x-4 mb-6">
                   <div className="w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                     <svg className="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -205,12 +227,20 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-gray-900 font-semibold text-lg">12903 54 St NW</p>
-                    <p className="text-gray-600">Edmonton, AB T5A 5E5</p>
+                    <p className="text-gray-900 font-semibold text-lg">11005 34 St NW</p>
+                    <p className="text-gray-600">Edmonton, AB T5W 2E6</p>
                   </div>
                 </div>
                 <p className="text-gray-600 mb-6">Our growing northside location serving families in North Edmonton with the same quality education and Islamic values.</p>
-                <button className="text-green-600 font-semibold hover:text-green-700 transition-colors">Get Directions →</button>
+                <a
+                  href="https://www.google.com/maps/search/?api=1&query=11005%2034%20St%20NW%2C%20Edmonton%2C%20AB%20T5W%202E6"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Get directions to the Northside Campus on Google Maps"
+                  className="mt-auto self-start text-green-600 font-semibold hover:text-green-700 transition-colors"
+                >
+                  Get Directions →
+                </a>
               </div>
             </div>
           </div>
@@ -295,14 +325,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <div className="flex items-center gap-2 mb-2">
-  <h3 className="text-2xl font-bold">Northside Campus</h3>
-  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium">
-    Coming Soon
-  </span>
-</div>
-
-                    <p className="text-gray-300">12903 54 St NW<br />Edmonton, AB T5A 5E5</p>
+                    <h4 className="text-xl font-semibold mb-2">Northside Campus</h4>
+                    <p className="text-gray-300">11005 34 St NW<br />Edmonton, AB T5W 2E6</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">

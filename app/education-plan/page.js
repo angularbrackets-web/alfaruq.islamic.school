@@ -154,8 +154,8 @@ export default function EducationPlan() {
               </div>
               <div className="p-8">
                 <div className="mb-6">
-                  <p className="text-gray-900 font-semibold text-lg mb-2">12903 54 Street</p>
-                  <p className="text-gray-600 mb-4">Edmonton, AB T5A 5E5</p>
+                  <p className="text-gray-900 font-semibold text-lg mb-2">11005 34 St NW</p>
+                  <p className="text-gray-600 mb-4">Edmonton, AB T5W 2E6</p>
                   <div className="bg-green-50 rounded-2xl p-4">
                     <p className="text-gray-700">
                       <strong>Preparing to open</strong> for the 2026-2027 academic year to serve families in Northeast Edmonton.

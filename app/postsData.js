@@ -15,7 +15,7 @@ const posts = [
       "😇 Focus on good manners, character & deen",
       "🎉 Fun activities, events & a safe place to grow",
       "Whether your child is just starting school or getting ready for the next big step – we’re here to help them succeed in the dunya and the akhirah ❤️",
-      "📍 Located in both South Edmonton (4410 127 St SW) & North Edmonton (12903 54th St. NW)",
+      "📍 Located in both South Edmonton (4410 127 St SW) & North Edmonton (11005 34 St NW)",
       "📞 Call/Text us: 780-243-8811",
       "🌐 Learn more or register online: www.alfaruislamicschool.com",
       "🔑 Limited spots – don’t wait too long!",
