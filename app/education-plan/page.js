@@ -144,12 +144,7 @@ export default function EducationPlan() {
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in border-2 border-green-200">
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <div className="flex items-center gap-3 mb-2">
-                  <h3 className="text-2xl font-bold">North East Campus</h3>
-                  <span className="text-sm bg-yellow-400 text-gray-900 px-3 py-1 rounded-full font-bold">
-                    Opening 2026/2027
-                  </span>
-                </div>
+                <h3 className="text-2xl font-bold mb-2">North Campus</h3>
                 <p className="text-green-100">Branch Campus</p>
               </div>
               <div className="p-8">
@@ -158,12 +153,12 @@ export default function EducationPlan() {
                   <p className="text-gray-600 mb-4">Edmonton, AB T5W 2E6</p>
                   <div className="bg-green-50 rounded-2xl p-4">
                     <p className="text-gray-700">
-                      <strong>Preparing to open</strong> for the 2026-2027 academic year to serve families in Northeast Edmonton.
+                      <strong>Property purchased</strong> in North Edmonton, extending our reach to families across the city.
                     </p>
                   </div>
                 </div>
                 <div className="space-y-3 mb-6">
-                  <p className="text-gray-900 font-semibold mb-2">Active preparations:</p>
+                  <p className="text-gray-900 font-semibold mb-2">Areas of focus:</p>
                   <div className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                     <span className="text-gray-600">Accreditation with Alberta Education</span>
@@ -492,7 +487,7 @@ export default function EducationPlan() {
                         </li>
                         <li className="flex items-start space-x-2">
                           <span className="text-orange-500">✓</span>
-                          <span>North East Campus expansion planning</span>
+                          <span>North Campus development</span>
                         </li>
                       </ul>
                     </div>

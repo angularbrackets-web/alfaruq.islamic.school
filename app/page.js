@@ -207,7 +207,7 @@ export default function Home() {
               <div className="relative h-48 md:h-56 w-full bg-gray-100">
                 <Image
                   src={northCampusPhoto}
-                  alt="Al Faruq Islamic School Northside Campus building at 11005 34 St NW, Edmonton"
+                  alt="Al Faruq Islamic School North Campus building at 11005 34 St NW, Edmonton"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1280px) 50vw, 600px"
                   placeholder="blur"
@@ -215,7 +215,7 @@ export default function Home() {
                 />
               </div>
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">Northside Campus</h3>
+                <h3 className="text-2xl font-bold mb-2">North Campus</h3>
                 <p className="text-green-100">Branch Campus</p>
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -231,12 +231,12 @@ export default function Home() {
                     <p className="text-gray-600">Edmonton, AB T5W 2E6</p>
                   </div>
                 </div>
-                <p className="text-gray-600 mb-6">Our growing northside location serving families in North Edmonton with the same quality education and Islamic values.</p>
+                <p className="text-gray-600 mb-6">Our North Edmonton location, serving families with the same quality education and Islamic values as our main campus.</p>
                 <a
                   href="https://www.google.com/maps/search/?api=1&query=11005%2034%20St%20NW%2C%20Edmonton%2C%20AB%20T5W%202E6"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Get directions to the Northside Campus on Google Maps"
+                  aria-label="Get directions to the North Campus on Google Maps"
                   className="mt-auto self-start text-green-600 font-semibold hover:text-green-700 transition-colors"
                 >
                   Get Directions →
@@ -325,7 +325,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Northside Campus</h4>
+                    <h4 className="text-xl font-semibold mb-2">North Campus</h4>
                     <p className="text-gray-300">11005 34 St NW<br />Edmonton, AB T5W 2E6</p>
                   </div>
                 </div>
