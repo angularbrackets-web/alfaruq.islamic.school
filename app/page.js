@@ -175,7 +175,7 @@ export default function Home() {
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-500 to-blue-600 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">Southside Campus</h3>
+                <h3 className="text-2xl font-bold mb-2">South Campus</h3>
                 <p className="text-blue-100">Main Campus</p>
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -196,7 +196,7 @@ export default function Home() {
                   href="https://www.google.com/maps/search/?api=1&query=4410%20127%20St%20SW%2C%20Edmonton%2C%20AB%20T6W%201A7"
                   target="_blank"
                   rel="noopener noreferrer"
-                  aria-label="Get directions to the Southside Campus on Google Maps"
+                  aria-label="Get directions to the South Campus on Google Maps"
                   className="mt-auto self-start text-blue-600 font-semibold hover:text-blue-700 transition-colors"
                 >
                   Get Directions →
@@ -313,7 +313,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">Southside Campus</h4>
+                    <h4 className="text-xl font-semibold mb-2">South Campus</h4>
                     <p className="text-gray-300">4410 127 St SW<br />Edmonton, AB T6W 1A7</p>
                   </div>
                 </div>
