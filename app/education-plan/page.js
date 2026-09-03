@@ -144,7 +144,10 @@ export default function EducationPlan() {
 
             <div className="bg-white rounded-3xl overflow-hidden shadow-lg hover-lift fade-in border-2 border-green-200">
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">North Campus</h3>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <h3 className="text-2xl font-bold">North Campus</h3>
+                  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium whitespace-nowrap">Coming Soon</span>
+                </div>
                 <p className="text-green-100">Branch Campus</p>
               </div>
               <div className="p-8">

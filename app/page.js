@@ -215,7 +215,10 @@ export default function Home() {
                 />
               </div>
               <div className="bg-gradient-to-br from-green-500 to-green-600 p-8 text-white">
-                <h3 className="text-2xl font-bold mb-2">North Campus</h3>
+                <div className="flex flex-wrap items-center gap-2 mb-2">
+                  <h3 className="text-2xl font-bold">North Campus</h3>
+                  <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium whitespace-nowrap">Coming Soon</span>
+                </div>
                 <p className="text-green-100">Branch Campus</p>
               </div>
               <div className="p-8 flex flex-col flex-1">
@@ -325,7 +328,10 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <h4 className="text-xl font-semibold mb-2">North Campus</h4>
+                    <div className="flex flex-wrap items-center gap-2 mb-2">
+                      <h4 className="text-xl font-semibold">North Campus</h4>
+                      <span className="text-sm bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full font-medium whitespace-nowrap">Coming Soon</span>
+                    </div>
                     <p className="text-gray-300">11005 34 St NW<br />Edmonton, AB T5W 2E6</p>
                   </div>
                 </div>
